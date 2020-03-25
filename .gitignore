@@ -1,2 +1,4 @@
 *.*.swp
 irmin-scylla/
+ocaml-git/
+cpp-driver/
