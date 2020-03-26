@@ -41,4 +41,12 @@ with my docker environment; I had built the container using non-standard methods
 and it was giving me other problems already. That's one of the reasons I wrote up a
 proper Dockerfile. This did not solve the issue. Next, I tried adding the directory
 containing the `libcassandra.a` file to the linker search path. That didn't work,
-either. 
+either.
+
+## Next Steps
+1. Test our implementation of a files system on top of Cassandra using the tests at
+`ocaml-git/test/git-unix`.
+2. Use it directly in Gowtham's MRDT code.
+
+I've tried skipping the first step, but it led to runtime errors (before code 
+refactoring).
